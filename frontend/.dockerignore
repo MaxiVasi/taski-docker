@@ -1,3 +1,6 @@
 # .dockerignore
 node_modules
 build
+# Environments
+.env
+.venv
