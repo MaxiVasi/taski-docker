@@ -1,5 +1,5 @@
-from pathlib import Path
 import os
+from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -58,12 +58,12 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-#DATABASES = {
+# DATABASES = {
 #    'default': {
 #        'ENGINE': 'django.db.backends.sqlite3',
 #        'NAME': BASE_DIR / 'db.sqlite3',
 #    }
-#}
+# }
 
 
 # Сохраняем базу данных для работу с докер.
@@ -72,14 +72,14 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 # пересоберите образ taski_backend.
 # В директории backend/ выполните команду docker build.
 # docker build -t taski_backend .
-# docker run --name taski_backend_container -p 8000:8000 -v sqlite_data:/data taski_backend 
+# docker run --name taski_backend_container -p 8000:8000 -v sqlite_data:/data taski_backend
 
-#DATABASES = {
+# DATABASES = {
 #    'default': {
 #        'ENGINE': 'django.db.backends.sqlite3',
 #        'NAME': '/data/db.sqlite3',
 #    }
-#} 
+# }
 
 DATABASES = {
     'default': {
